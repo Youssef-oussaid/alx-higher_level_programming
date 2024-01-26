@@ -1,5 +1,3 @@
-#include <bits/c++config.h>
-#include <stddef.h>
 #ifndef LISTS_H
 #define LISTS_H
 
