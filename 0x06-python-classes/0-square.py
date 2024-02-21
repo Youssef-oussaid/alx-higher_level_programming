@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""A square Module"""
+"""A square Module."""
 
 class Square:
-    """A square is a algebra shape"""
+    """A square is a algebra shape."""
