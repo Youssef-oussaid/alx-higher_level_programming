@@ -3,3 +3,4 @@
 
 class Square:
     """A square is a algebra shape."""
+    pass
