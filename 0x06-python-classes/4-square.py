@@ -16,7 +16,7 @@ class Square:
     @property
     def size(self):
         """property for the length of a side of a square
-        
+
         Raises:
             TypeError: if size is not an int
             ValueError: if less than 0
