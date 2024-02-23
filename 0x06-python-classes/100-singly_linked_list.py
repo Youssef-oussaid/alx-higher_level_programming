@@ -11,7 +11,7 @@ class Node:
             Next_node (Node): The next one
         """
         self.data = data
-        sel.next_node = next_node
+        self.next_node = next_node
 
     @property
     def data(self):
