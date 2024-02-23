@@ -4,8 +4,6 @@
 
 import math
 
-from networkx import radius
-
 
 class MagicClass:
     """A circle"""
