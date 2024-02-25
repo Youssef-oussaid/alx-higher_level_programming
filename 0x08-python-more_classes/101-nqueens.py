@@ -59,7 +59,7 @@ def xout(board, row, col):
     for r in range(row -1, -1, -1):
         if c < 0:
             break
-        board[r][c]
+        board[r][c] = "x"
         c -= 1
     # X out all spots diagonally up to the right
     c = col + 1
@@ -103,10 +103,10 @@ if __name__ == "__main__":
         print("Usage: nqueens N")
         sys.exit(1)
     if sys.argv[1].isdigit() is False:
-        print("Nmust be a number")
+        print("N must be a number")
         sys.exit(1)
     if int(sys.argv[1]) < 4:
-        print("Nmust be at least 4")
+        print("N must be at least 4")
         sys.exit(1)
 
     board = init_board(int(sys.argv[1]))
