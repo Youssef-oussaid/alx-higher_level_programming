@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/oussa/Downloads/code/alx-higher_level_programming/0x04-python-more_data_structures",
-      "program": "c:/Users/oussa/Downloads/code/alx-higher_level_programming/0x04-python-more_data_structures/build/Debug/outDebug",
+      "cwd": "c:/Users/oussa/Downloads/code/alx-higher_level_programming/0x07-python-test_driven_development",
+      "program": "c:/Users/oussa/Downloads/code/alx-higher_level_programming/0x07-python-test_driven_development/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
