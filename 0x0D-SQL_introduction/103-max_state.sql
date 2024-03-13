@@ -1,2 +1,2 @@
 -- displays the max temperature of each state (ordered by State name)
-SELECT state, MAX(value) AS max_temp GROUP BY state ORDER BY state LIMIT 3;
+SELECT state, MAX(value) AS max_temp FROM temperature GROUP BY state ORDER BY state ASC LIMIT 3;
