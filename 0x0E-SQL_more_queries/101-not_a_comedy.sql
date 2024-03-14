@@ -1,5 +1,5 @@
 -- a script that lists all shows without the genre Comedy
-ELECT DISTINCT `title`
+SELECT DISTINCT `title`
   FROM `tv_shows` AS t
        LEFT JOIN `tv_show_genres` AS s
        ON s.`show_id` = t.`id`
