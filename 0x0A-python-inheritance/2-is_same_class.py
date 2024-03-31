@@ -8,4 +8,4 @@ def is_same_class(obj, a_class):
         obj: the object to check
         a_class: the class to check
     """
-    return bool(isinstance(obj, a_class))
+    return bool(type(obj) == a_class)
