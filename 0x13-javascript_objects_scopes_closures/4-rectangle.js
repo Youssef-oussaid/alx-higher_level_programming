@@ -22,13 +22,14 @@ class Rectangle {
     }
 
     rotate () {
-      this.height = this.w;
-      this.width = this.h;
+      let tmp = this.height;
+      this.height = this.width;
+      this.width = this.tmp;
     }
 
     double () {
-      this.height * 2;
-      this.width * 2;
+      this.height = this.height * 2;
+      this.width = this.width * 2;
     }
   }
   module.exports = Rectangle;
