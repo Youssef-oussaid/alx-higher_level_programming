@@ -6,7 +6,8 @@ class Rectangle {
       this.height = h;
     }
   }
-  print() {
+
+  print () {
     let i = 0;
     while (this.height > i) {
       let j = 0;
