@@ -12,7 +12,7 @@ db = MySQLdb.connect(host="localhost",
                      db=sys.argv[3],
                      port=3306)
 cur = db.cursor()
-cur.execute("SELECT * FROM hbtn_0e_0_usa ORDER BY stated.id ASC")
+cur.execute("SELECT * FROM hbtn_0e_0_usa ORDER BY states.id ASC")
 rows = cur.fetchall()
 for row in rows:
     for col in row:
