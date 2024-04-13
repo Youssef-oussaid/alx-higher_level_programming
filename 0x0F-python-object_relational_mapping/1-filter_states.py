@@ -3,7 +3,6 @@
 
 
 from sys import argv
-from tkinter.tix import Select
 import MySQLdb
 
 if __name__ == "__main__":
