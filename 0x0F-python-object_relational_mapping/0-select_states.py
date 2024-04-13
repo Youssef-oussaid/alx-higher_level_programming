@@ -3,10 +3,13 @@
 
 
 import MySQLdb
+import sys
+
+
 db = MySQLdb.connect(host="localhost",
-                     user="root",
-                     password="root",
-                     db="hbtn_0e_0_usa",
+                     user=sys.argv[1],
+                     password=sys.argv[2],
+                     db=sys.argv[3],
                      port=3306)
 cur = db.cursor()
 cur.execute("SELECT * FROM hbtn_0e_0_usa ORDER BY stated.id ASC")
@@ -17,3 +20,6 @@ for row in rows:
     print("\n")
 cur.close()
 db.close()
+
+if __name__ == "__main__":
+    main()
