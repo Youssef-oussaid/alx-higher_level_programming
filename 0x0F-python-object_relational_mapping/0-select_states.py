@@ -2,8 +2,8 @@
 """A module to list rows from a database"""
 
 
-import MySQLdb
 import sys
+import MySQLdb
 
 
 db = MySQLdb.connect(host="localhost",
@@ -16,7 +16,7 @@ cur.execute("SELECT * FROM states ORDER BY states.id ASC")
 rows = cur.fetchall()
 for row in rows:
     for col in row:
-        print("%s," % col, end=" ")
+        print("%s," % col, end="")
     print("\n")
 cur.close()
 db.close()
