@@ -4,8 +4,8 @@
 
 import MySQLdb
 db = MySQLdb.connect(host="localhost",
-                     user="username",
-                     passwd="password",
+                     user="root",
+                     passwd="root",
                      db="hbtn_0e_0_usa",
                      port=3306)
 cur = db.cursor()
