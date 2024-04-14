@@ -11,7 +11,7 @@ if __name__ == "__main__":
     cur.excute("""
                SELECT cities.name FROM cities
                JOIN states ON cities.state_id = states.id
-               WHERE states.name = ?
+               WHERE states.name = %s
                ORDER cities.id ASC
                """, (argv[4], ))
     print(", ".join(map(lambda x: x[0], cur.fetchall())))
