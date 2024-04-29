@@ -1,3 +1,3 @@
 #!/bin/bash
 #Display the body if 200 ok
-curl "$1"
+curl -X GET "$1" -L 200
