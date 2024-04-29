@@ -79,3 +79,28 @@ class Rectangle:
         """
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
+
+    @staticmethod
+    def bigger_or_equal(rect_1, rect_2):
+        """Return the bigger of the two rectangles.
+
+        Args:
+            rect_1: The First One
+            rect_2: The second One
+        """
+        if not isinstance(rect_1, Rectangle):
+            raise TypeError("rect_1 must be an instance of Rectangle")
+        if not isinstance(rect_2, Rectangle):
+            raise TypeError("rect_2 must be an instance of Rectangle")
+        if rect_2.area() > rect_1.area():
+            return rect_2
+        return rect_1
+
+    @classmethod
+    def square(cls, size=0):
+        """Initiates a new square.
+
+        Args:
+            size (int, optional): _description_. Defaults to 0.
+        """
+        return cls(size, size)
