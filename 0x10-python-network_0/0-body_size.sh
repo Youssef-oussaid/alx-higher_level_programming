@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
-response=$(curl -sI "$1" | awk '/Content-Length/ {print $2}')
-echo "$response"
+#sends request, displays body size
+
+size=$(curl "$1" | awk '/Content-Length/ {print $2}')
+echo "$size"
