@@ -7,14 +7,6 @@ request(url, (error, response, body) => {
     console.error(error);
     return;
   }
-  if (response.statusCode !== 200) {
-    console.error(`Failed to fetch data. Status code: ${response.statusCode}`);
-    return;
-  }
-  try {
     const data = JSON.parse(body);
     console.log(data.title);
-  } catch (e) {
-    console.error('Error parsing JSON:', e);
-  }
 });
