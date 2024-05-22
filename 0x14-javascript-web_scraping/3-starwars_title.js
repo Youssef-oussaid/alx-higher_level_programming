@@ -7,6 +7,6 @@ request(url, (error, response, body) => {
     console.error(error);
     return;
   }
-    const data = JSON.parse(body);
-    console.log(data.title);
+  const data = JSON.parse(body);
+  console.log(data.title);
 });
