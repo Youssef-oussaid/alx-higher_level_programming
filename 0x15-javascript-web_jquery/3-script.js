@@ -1,6 +1,5 @@
 $(document).ready(function() {
     $('#red_header').click(function() {
-        const $header = $('header');
-        $header.css('color', '#FF0000');
+        $('header').addClass('red');
     });
 });
